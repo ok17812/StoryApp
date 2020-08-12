@@ -1,17 +1,17 @@
 //
-//  StoryBrain.swift
+//  StoryBrain4.swift
 //  StoryApp
 //
-//  Created by Evan Chang on 8/6/20.
+//  Created by Evan Chang on 8/11/20.
 //  Copyright © 2020 Evan Chang. All rights reserved.
 //
 
 import Foundation
 
-struct StoryBrain {
+struct StoryBrain4 {
     let example = [
                 Story(
-            title: "You are standing by a switch. In the distance, you see a trolley approaching. If it continues on the line, it will run over five cute little children who are tied to the rails, unable to escape. If you flip the switch, the trolley will change its path and run an old man over instead.",
+            title: "test4",
             choice1: "I'll hop in. Thanks for the help!", choice1Destination: 2,
             choice2: "Better ask him if he's a murderer first.", choice2Destination: 1
         ),

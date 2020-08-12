@@ -9,25 +9,39 @@
 /* Begin PBXBuildFile section */
 		7455CDFB24DBBA5600C19A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455CDFA24DBBA5600C19A4F /* AppDelegate.swift */; };
 		7455CDFD24DBBA5600C19A4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455CDFC24DBBA5600C19A4F /* SceneDelegate.swift */; };
-		7455CDFF24DBBA5600C19A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455CDFE24DBBA5600C19A4F /* ViewController.swift */; };
+		7455CDFF24DBBA5600C19A4F /* TitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455CDFE24DBBA5600C19A4F /* TitleController.swift */; };
 		7455CE0224DBBA5600C19A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7455CE0024DBBA5600C19A4F /* Main.storyboard */; };
 		7455CE0424DBBA5600C19A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7455CE0324DBBA5600C19A4F /* Assets.xcassets */; };
 		7455CE0724DBBA5600C19A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7455CE0524DBBA5600C19A4F /* LaunchScreen.storyboard */; };
 		7455CE1324DBBAB400C19A4F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455CE1224DBBAB400C19A4F /* Story.swift */; };
 		7455CE1524DBBAC000C19A4F /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455CE1424DBBAC000C19A4F /* StoryBrain.swift */; };
+		74B9F18524E37ED700AFDA12 /* StoryBrain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18424E37ED700AFDA12 /* StoryBrain2.swift */; };
+		74B9F18724E37F0B00AFDA12 /* StoryBrain3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18624E37F0B00AFDA12 /* StoryBrain3.swift */; };
+		74B9F18924E37F1700AFDA12 /* StoryBrain4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18824E37F1700AFDA12 /* StoryBrain4.swift */; };
+		74B9F18B24E38A4F00AFDA12 /* TrolleyVsBridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18A24E38A4F00AFDA12 /* TrolleyVsBridgeController.swift */; };
+		74B9F18D24E38B4700AFDA12 /* ThomsonViolinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18C24E38B4700AFDA12 /* ThomsonViolinController.swift */; };
+		74B9F18F24E38B6100AFDA12 /* CharlotteFamilyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18E24E38B6100AFDA12 /* CharlotteFamilyController.swift */; };
+		74B9F19124E38B7800AFDA12 /* HeinzMedicineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F19024E38B7800AFDA12 /* HeinzMedicineController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7455CDF724DBBA5600C19A4F /* StoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7455CDFA24DBBA5600C19A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7455CDFC24DBBA5600C19A4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7455CDFE24DBBA5600C19A4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7455CDFE24DBBA5600C19A4F /* TitleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleController.swift; sourceTree = "<group>"; };
 		7455CE0124DBBA5600C19A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7455CE0324DBBA5600C19A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7455CE0624DBBA5600C19A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7455CE0824DBBA5600C19A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7455CE1224DBBAB400C19A4F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		7455CE1424DBBAC000C19A4F /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		74B9F18424E37ED700AFDA12 /* StoryBrain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain2.swift; sourceTree = "<group>"; };
+		74B9F18624E37F0B00AFDA12 /* StoryBrain3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain3.swift; sourceTree = "<group>"; };
+		74B9F18824E37F1700AFDA12 /* StoryBrain4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain4.swift; sourceTree = "<group>"; };
+		74B9F18A24E38A4F00AFDA12 /* TrolleyVsBridgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrolleyVsBridgeController.swift; sourceTree = "<group>"; };
+		74B9F18C24E38B4700AFDA12 /* ThomsonViolinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsonViolinController.swift; sourceTree = "<group>"; };
+		74B9F18E24E38B6100AFDA12 /* CharlotteFamilyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharlotteFamilyController.swift; sourceTree = "<group>"; };
+		74B9F19024E38B7800AFDA12 /* HeinzMedicineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeinzMedicineController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,9 @@
 			children = (
 				7455CE1224DBBAB400C19A4F /* Story.swift */,
 				7455CE1424DBBAC000C19A4F /* StoryBrain.swift */,
+				74B9F18424E37ED700AFDA12 /* StoryBrain2.swift */,
+				74B9F18624E37F0B00AFDA12 /* StoryBrain3.swift */,
+				74B9F18824E37F1700AFDA12 /* StoryBrain4.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,7 +101,11 @@
 		7455CE1024DBBA9800C19A4F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7455CDFE24DBBA5600C19A4F /* ViewController.swift */,
+				7455CDFE24DBBA5600C19A4F /* TitleController.swift */,
+				74B9F18A24E38A4F00AFDA12 /* TrolleyVsBridgeController.swift */,
+				74B9F18C24E38B4700AFDA12 /* ThomsonViolinController.swift */,
+				74B9F18E24E38B6100AFDA12 /* CharlotteFamilyController.swift */,
+				74B9F19024E38B7800AFDA12 /* HeinzMedicineController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,10 +190,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7455CE1524DBBAC000C19A4F /* StoryBrain.swift in Sources */,
-				7455CDFF24DBBA5600C19A4F /* ViewController.swift in Sources */,
+				74B9F18B24E38A4F00AFDA12 /* TrolleyVsBridgeController.swift in Sources */,
+				7455CDFF24DBBA5600C19A4F /* TitleController.swift in Sources */,
+				74B9F18D24E38B4700AFDA12 /* ThomsonViolinController.swift in Sources */,
 				7455CDFB24DBBA5600C19A4F /* AppDelegate.swift in Sources */,
+				74B9F18F24E38B6100AFDA12 /* CharlotteFamilyController.swift in Sources */,
+				74B9F18724E37F0B00AFDA12 /* StoryBrain3.swift in Sources */,
 				7455CDFD24DBBA5600C19A4F /* SceneDelegate.swift in Sources */,
+				74B9F19124E38B7800AFDA12 /* HeinzMedicineController.swift in Sources */,
+				74B9F18924E37F1700AFDA12 /* StoryBrain4.swift in Sources */,
 				7455CE1324DBBAB400C19A4F /* Story.swift in Sources */,
+				74B9F18524E37ED700AFDA12 /* StoryBrain2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

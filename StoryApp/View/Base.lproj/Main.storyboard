@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iqc-I5-ka3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Trolley vs Footbridge-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Trolley vs Footbridge" id="BYZ-38-t0r" customClass="TrolleyVsBridgeController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,10 +19,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b0T-eg-tGE">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Story Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAa-Vz-35u">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="578"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="534"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9QG-pg-Frw">
-                                        <rect key="frame" x="0.0" y="598" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="554" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="3Xd-kg-zdV"/>
                                         </constraints>
@@ -53,7 +53,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fwF-55-PpX">
-                                        <rect key="frame" x="0.0" y="718" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="674" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="ymn-43-hmb"/>
                                         </constraints>
@@ -87,6 +87,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DFB-iS-izV"/>
                     <connections>
                         <outlet property="choice1Button" destination="9QG-pg-Frw" id="aKS-Il-M1J"/>
                         <outlet property="choice2Button" destination="fwF-55-PpX" id="xI3-ZP-r5j"/>
@@ -95,11 +96,440 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="442.02898550724643" y="-857.14285714285711"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="2YS-gC-qmk">
+            <objects>
+                <viewController title="Title" id="UMb-KW-Uwj" customClass="TitleController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="83f-8b-pt4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sFd-Wn-lon">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E9d-1X-D5d">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Get Started by clicking on one of the cases below" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2W-dM-Rr9">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="294"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-kS-XRR">
+                                        <rect key="frame" x="0.0" y="314" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="z6J-D2-i6n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Trolley vs Footbridge" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="UMb-KW-Uwj" eventType="touchUpInside" id="9QL-dt-Awe"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="9fz-qf-0hh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hxs-KZ-NYT">
+                                        <rect key="frame" x="0.0" y="434" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="q8B-Rn-Wth"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Thomson's Violin" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="UMb-KW-Uwj" eventType="touchUpInside" id="THd-RH-LFd"/>
+                                            <segue destination="qL0-mb-Ffk" kind="show" id="BGU-15-7hV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Nrr-Y1-fek">
+                                        <rect key="frame" x="0.0" y="554" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="oHa-qN-YTl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Charlotte's Family" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="UMb-KW-Uwj" eventType="touchUpInside" id="NbR-Uv-gGq"/>
+                                            <segue destination="zxV-71-cqA" kind="show" id="by5-u6-aOn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Yqe-gv-10J">
+                                        <rect key="frame" x="0.0" y="674" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="awe-tP-SDg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Heinz and the Medicine" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="UMb-KW-Uwj" eventType="touchUpInside" id="I6j-hd-FwJ"/>
+                                            <segue destination="08d-bB-ehW" kind="show" id="rro-BB-NKd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m2W-dM-Rr9" firstAttribute="top" secondItem="E9d-1X-D5d" secondAttribute="top" id="19t-Hz-97Y"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sFd-Wn-lon" firstAttribute="top" secondItem="83f-8b-pt4" secondAttribute="top" id="1Lc-MZ-61t"/>
+                            <constraint firstItem="wOm-Dt-gda" firstAttribute="bottom" secondItem="E9d-1X-D5d" secondAttribute="bottom" id="2IA-02-bTl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E9d-1X-D5d" secondAttribute="trailing" id="6Z8-nT-db1"/>
+                            <constraint firstItem="sFd-Wn-lon" firstAttribute="trailing" secondItem="wOm-Dt-gda" secondAttribute="trailing" id="J6b-sK-QtS"/>
+                            <constraint firstItem="E9d-1X-D5d" firstAttribute="top" secondItem="wOm-Dt-gda" secondAttribute="top" id="fEe-dK-i4n"/>
+                            <constraint firstAttribute="bottom" secondItem="sFd-Wn-lon" secondAttribute="bottom" id="kKw-a0-LQN"/>
+                            <constraint firstItem="E9d-1X-D5d" firstAttribute="leading" secondItem="83f-8b-pt4" secondAttribute="leadingMargin" id="pEt-Pw-17o"/>
+                            <constraint firstItem="sFd-Wn-lon" firstAttribute="leading" secondItem="wOm-Dt-gda" secondAttribute="leading" id="xK3-zD-g74"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wOm-Dt-gda"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mx6-9q-lMg"/>
+                    <connections>
+                        <outlet property="choice1Button" destination="w6p-kS-XRR" id="GDI-Tq-d9D"/>
+                        <outlet property="choice2Button" destination="hxs-KZ-NYT" id="XPm-wi-yCa"/>
+                        <outlet property="choice3Button" destination="Nrr-Y1-fek" id="P9R-OD-gN7"/>
+                        <outlet property="choice4Button" destination="Yqe-gv-10J" id="lPq-ka-uPb"/>
+                        <outlet property="storyLabel" destination="m2W-dM-Rr9" id="i8G-AI-cqw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKF-oO-BKk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-800.00000000000011" y="-251.11607142857142"/>
+        </scene>
+        <!--Heinz and the Medicine-->
+        <scene sceneID="lBL-gk-H5G">
+            <objects>
+                <viewController title="Heinz and the Medicine" id="08d-bB-ehW" customClass="HeinzMedicineController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iUJ-dm-6Hs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Jbv-3v-eIo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-fp-YdD">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Story Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THK-Cr-5d4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="534"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8cA-hN-IIh">
+                                        <rect key="frame" x="0.0" y="554" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="edl-9s-9Nn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 1" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="08d-bB-ehW" eventType="touchUpInside" id="HOy-gg-FH0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DoC-L8-RMf">
+                                        <rect key="frame" x="0.0" y="674" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="S7U-1W-RzW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 2" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="08d-bB-ehW" eventType="touchUpInside" id="Wgv-uh-OeN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jbv-3v-eIo" firstAttribute="trailing" secondItem="vrd-fy-wsD" secondAttribute="trailing" id="QJH-3n-b8r"/>
+                            <constraint firstItem="hDZ-fp-YdD" firstAttribute="top" secondItem="vrd-fy-wsD" secondAttribute="top" id="RtY-Az-nHD"/>
+                            <constraint firstAttribute="bottom" secondItem="Jbv-3v-eIo" secondAttribute="bottom" id="TDK-lW-F98"/>
+                            <constraint firstItem="hDZ-fp-YdD" firstAttribute="leading" secondItem="iUJ-dm-6Hs" secondAttribute="leadingMargin" id="deO-7C-ZJq"/>
+                            <constraint firstItem="vrd-fy-wsD" firstAttribute="bottom" secondItem="hDZ-fp-YdD" secondAttribute="bottom" id="f9V-gv-Bvn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hDZ-fp-YdD" secondAttribute="trailing" id="mkP-Wu-I4m"/>
+                            <constraint firstItem="Jbv-3v-eIo" firstAttribute="top" secondItem="iUJ-dm-6Hs" secondAttribute="top" id="ta1-8s-5pY"/>
+                            <constraint firstItem="Jbv-3v-eIo" firstAttribute="leading" secondItem="vrd-fy-wsD" secondAttribute="leading" id="yf6-Do-JxI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vrd-fy-wsD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nHM-pW-Dpz"/>
+                    <connections>
+                        <outlet property="choice1Button" destination="8cA-hN-IIh" id="nO8-Tf-9Nn"/>
+                        <outlet property="choice2Button" destination="DoC-L8-RMf" id="vqz-bn-NoL"/>
+                        <outlet property="storyLabel" destination="THK-Cr-5d4" id="Px7-t9-FI8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVn-Hs-ky2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="540"/>
+        </scene>
+        <!--Thomson's Violin-->
+        <scene sceneID="HOm-4U-uhr">
+            <objects>
+                <viewController title="Thomson's Violin" id="qL0-mb-Ffk" customClass="ThomsonViolinController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Qq-ZT-tnD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8WL-PR-GOW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wFD-bg-eu4">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Story Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="En3-tB-omY">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="534"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gkE-v6-xOf">
+                                        <rect key="frame" x="0.0" y="554" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="HES-4i-s4E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 1" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="qL0-mb-Ffk" eventType="touchUpInside" id="RPR-XH-UkO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="VMv-YA-emn">
+                                        <rect key="frame" x="0.0" y="674" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="XZD-hc-bmF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 2" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="qL0-mb-Ffk" eventType="touchUpInside" id="7Xm-EE-J2S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8WL-PR-GOW" firstAttribute="top" secondItem="6Qq-ZT-tnD" secondAttribute="top" id="17F-Eb-qD9"/>
+                            <constraint firstItem="wFD-bg-eu4" firstAttribute="leading" secondItem="6Qq-ZT-tnD" secondAttribute="leadingMargin" id="4U0-cz-eGe"/>
+                            <constraint firstItem="8WL-PR-GOW" firstAttribute="trailing" secondItem="eBK-Kt-g8e" secondAttribute="trailing" id="865-yV-LNh"/>
+                            <constraint firstItem="eBK-Kt-g8e" firstAttribute="bottom" secondItem="wFD-bg-eu4" secondAttribute="bottom" id="MJv-e9-1Z8"/>
+                            <constraint firstItem="wFD-bg-eu4" firstAttribute="top" secondItem="eBK-Kt-g8e" secondAttribute="top" id="coK-tH-aC6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wFD-bg-eu4" secondAttribute="trailing" id="eSM-E2-l9N"/>
+                            <constraint firstAttribute="bottom" secondItem="8WL-PR-GOW" secondAttribute="bottom" id="nHJ-pb-CEe"/>
+                            <constraint firstItem="8WL-PR-GOW" firstAttribute="leading" secondItem="eBK-Kt-g8e" secondAttribute="leading" id="rjT-jv-bue"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eBK-Kt-g8e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hfH-zE-5im"/>
+                    <connections>
+                        <outlet property="choice1Button" destination="gkE-v6-xOf" id="mbS-Zr-4FA"/>
+                        <outlet property="choice2Button" destination="VMv-YA-emn" id="CGI-vM-jhu"/>
+                        <outlet property="storyLabel" destination="En3-tB-omY" id="Ms3-YX-5iS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fo-5c-hIM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673.913043478261" y="-479.46428571428567"/>
+        </scene>
+        <!--Charlotte's Family-->
+        <scene sceneID="8Ld-fC-QP6">
+            <objects>
+                <viewController title="Charlotte's Family" id="zxV-71-cqA" customClass="CharlotteFamilyController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7wK-1E-wut">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="OnE-2v-5Ey">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Iqc-2Z-r4D">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Story Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-ld-bhp">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="534"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dPX-zj-KDB">
+                                        <rect key="frame" x="0.0" y="554" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="OKG-yq-wQF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 1" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="zxV-71-cqA" eventType="touchUpInside" id="rPS-q4-XUz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SGi-7Q-r6j">
+                                        <rect key="frame" x="0.0" y="674" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="B9L-cN-StR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Choice 2" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="zxV-71-cqA" eventType="touchUpInside" id="DTG-Pz-lzO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AJb-WZ-L3s" firstAttribute="bottom" secondItem="Iqc-2Z-r4D" secondAttribute="bottom" id="9oG-C1-Gly"/>
+                            <constraint firstItem="OnE-2v-5Ey" firstAttribute="top" secondItem="7wK-1E-wut" secondAttribute="top" id="JeC-0s-5zh"/>
+                            <constraint firstItem="Iqc-2Z-r4D" firstAttribute="top" secondItem="AJb-WZ-L3s" secondAttribute="top" id="TmH-2y-aKe"/>
+                            <constraint firstAttribute="bottom" secondItem="OnE-2v-5Ey" secondAttribute="bottom" id="fNd-aC-I4c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iqc-2Z-r4D" secondAttribute="trailing" id="g72-sz-sYB"/>
+                            <constraint firstItem="Iqc-2Z-r4D" firstAttribute="leading" secondItem="7wK-1E-wut" secondAttribute="leadingMargin" id="hYC-gr-pRq"/>
+                            <constraint firstItem="OnE-2v-5Ey" firstAttribute="trailing" secondItem="AJb-WZ-L3s" secondAttribute="trailing" id="wxX-cf-Lw4"/>
+                            <constraint firstItem="OnE-2v-5Ey" firstAttribute="leading" secondItem="AJb-WZ-L3s" secondAttribute="leading" id="yNr-59-Ob5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AJb-WZ-L3s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lMx-5N-h6f"/>
+                    <connections>
+                        <outlet property="choice1Button" destination="dPX-zj-KDB" id="BvC-8c-mkF"/>
+                        <outlet property="choice2Button" destination="SGi-7Q-r6j" id="xe2-gh-HVe"/>
+                        <outlet property="storyLabel" destination="jhI-ld-bhp" id="diP-bw-f8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Km2-FG-BMb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673.913043478261" y="345.53571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AMU-dA-wDl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iqc-I5-ka3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YeY-cj-vhF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UMb-KW-Uwj" kind="relationship" relationship="rootViewController" id="LpV-Vt-g6G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="34h-nb-hHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1710.144927536232" y="-251.11607142857142"/>
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="177" height="177"/>
+        <image name="background" width="958" height="1793"/>
         <image name="choice1Background" width="1370.5" height="363"/>
         <image name="choice2Background" width="1370.5" height="363"/>
     </resources>
