@@ -25,6 +25,7 @@ class TrolleyVsBridgeController: UIViewController {
         choice1Button.setTitle(storyBrain.changeButton1(), for: UIControl.State.normal)
         choice2Button.setTitle(storyBrain.changeButton2(), for: UIControl.State.normal)
         imageView.isHidden = false
+        
 
     }
     
