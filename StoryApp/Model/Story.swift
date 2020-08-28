@@ -9,7 +9,8 @@
 import Foundation
 
 struct Story {
-        let title : String
+        let text : String
+        let question: String
         let choice1 : String
         let choice1Destination : Int
         let choice2 : String

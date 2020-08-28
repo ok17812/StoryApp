@@ -9,61 +9,85 @@
 import Foundation
 
 struct StoryBrain3 {
-    let example = [
-                Story(
-            title: "test3",
-            choice1: "I'll hop in. Thanks for the help!", choice1Destination: 2,
-            choice2: "Better ask him if he's a murderer first.", choice2Destination: 1
-        ),
-        Story(
-            title: "He nods slowly, unfazed by the question.",
-            choice1: "At least he's honest. I'll climb in.", choice1Destination: 2,
-            choice2: "Wait, I know how to change a tire.", choice2Destination: 3
-        ),
-        Story(
-            title: "As you begin to drive, the stranger starts talking about his relationship with his mother. He gets angrier and angrier by the minute. He asks you to open the glovebox. Inside you find a bloody knife, two severed fingers, and a cassette tape of Elton John. He reaches for the glove box.",
-            choice1: "I love Elton John! Hand him the cassette tape.", choice1Destination: 5,
-            choice2: "It's him or me! You take the knife and stab him.", choice2Destination: 4
-        ),
-        Story(
-            title: "What? Such a cop out! Did you know traffic accidents are the second leading cause of accidental death for most adult age groups?",
-            choice1: "The", choice1Destination: 0,
-            choice2: "End", choice2Destination: 0
-        ),
-        Story(
-            title: "As you smash through the guardrail and careen towards the jagged rocks below you reflect on the dubious wisdom of stabbing someone while they are driving a car you are in.",
-            choice1: "The", choice1Destination: 0,
-            choice2: "End", choice2Destination: 0
-        ),
-        Story(
-            title: "You bond with the murderer while crooning verses of 'Can you feel the love tonight'. He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: 'Try the pier.'",
-            choice1: "The", choice1Destination: 0,
-            choice2: "End", choice2Destination: 0
-        )
-]
-    
-    var choiceDestination = 0
-    
-    func changeTitle() -> String {
-        return example[choiceDestination].title
-    }
-    
-    func changeButton1() -> String {
-        return example[choiceDestination].choice1
-    }
-    
-    func changeButton2() -> String {
-        return example[choiceDestination].choice2
-    }
-    
-    mutating func nextStory(SelectedAnswer:String) {
-        if SelectedAnswer == example[choiceDestination].choice1 {
-            choiceDestination = example[choiceDestination].choice1Destination
+     let example = [
+    /*0*/  Story(
+                text: "Charlotte recently graduated Harvard and has a high-paying job waiting for her. She's motivated, excited, and hard-working. Charlotte’s parents divorced while she was in high school. Her father abandoned the family at that time and has not been supportive since, rarely and unpredictably checking in with Charlotte. She and her mother moved in to live with her grandparents at the time of the divorce. Charlotte’s mom is financially irresponsible and emotionally unstable.",
+                question: "",
+                choice1: "Click to Continue",
+                choice1Destination: 1,
+                choice2: "",
+                choice2Destination: 1
+            ),
+    /*1*/   Story(
+                text: "Charlotte’s grandparents paid for her college and financially supported her mom. While at college, Charlotte drifted apart from her mother, and this has been a relief for Charlotte. Her grandparents are getting old and they want Charlotte to take care of her mom when they are gone. Charlotte feels conflicted: she is excited about her new independence and does not want to be burdened by her mother’s needs, but she also feels some sense of responsibility for the wellbeing of her mother and feels obligated to take her grandparents’ wishes seriously.",
+                question: "Is it morally permissible for Charlotte to refuse to help her mother?",
+                choice1: "Yes",
+                choice1Destination: 2,
+                choice2: "No",
+                choice2Destination: 3
+            ),
+    /*2*/        Story(
+            text: "There is an unconditional philosophical view of familial obligations that says by just being a parent, that person is entitled to certain things from you. In practically no other human relationship is love so unconditionally given. The same is true for the child’s love for the parent: it is given unconditionally, and without choice. This unique type of relationship makes the obligations between a child and a parent different from obligations between two friends.",
+            question: "",
+            choice1: "You chose Yes",
+            choice1Destination: 4,
+            choice2: "Return to Menu",
+            choice2Destination: 4
+                ),
+     /*3*/       Story(
+            text: "Why do you say that? While our moral obligations are different for people that may have hurt us, we must also consider familial obligations. What special obligations do we have for our family? It’s up to the individual to decide whether or not they want to maintain a relationship with their parents. If they helped you, you may want to help them out, but some say that there is no obligation to.",
+            question: "",
+            choice1: "You chose No",
+            choice1Destination: 5,
+            choice2: "Return to Menu",
+            choice2Destination: 5
+                ),
+    /*4*/        Story(
+           text: "There is an unconditional philosophical view of familial obligations that says by just being a parent, that person is entitled to certain things from you. In practically no other human relationship is love so unconditionally given. The same is true for the child’s love for the parent: it is given unconditionally, and without choice. This unique type of relationship makes the obligations between a child and a parent different from obligations between two friends.",
+           question: "",
+           choice1: "You chose Yes",
+           choice1Destination: 10,
+           choice2: "Return to Menu",
+           choice2Destination: 10
+               ),
+    /*5*/       Story(
+           text: "Why do you say that? While our moral obligations are different for people that may have hurt us, we must also consider familial obligations. What special obligations do we have for our family? It’s up to the individual to decide whether or not they want to maintain a relationship with their parents. If they helped you, you may want to help them out, but some say that there is no obligation to.",
+           question: "",
+           choice1: "You chose No",
+           choice1Destination: 10,
+           choice2: "Return to Menu",
+           choice2Destination: 10
+               )
+    ]
+        
+        var choiceDestination = 0
+        
+        func changeText() -> String {
+            return example[choiceDestination].text
         }
-        else {
-            choiceDestination = example[choiceDestination].choice2Destination
+        
+        func changeQuestion() -> String {
+            return example[choiceDestination].question
+        }
+        
+        func changeButton1() -> String {
+            return example[choiceDestination].choice1
+        }
+        
+        func changeButton2() -> String {
+            return example[choiceDestination].choice2
+        }
+        
+        func destination() -> Int {
+            return example[choiceDestination].choice2Destination
+        }
+        
+        mutating func nextStory(SelectedAnswer:String) {
+            if SelectedAnswer == example[choiceDestination].choice1 {
+                choiceDestination = example[choiceDestination].choice1Destination
+            }
+            else {
+                choiceDestination = example[choiceDestination].choice2Destination
+            }
         }
     }
-}
-
-

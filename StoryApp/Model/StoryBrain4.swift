@@ -10,42 +10,88 @@ import Foundation
 
 struct StoryBrain4 {
     let example = [
-                Story(
-            title: "test4",
-            choice1: "I'll hop in. Thanks for the help!", choice1Destination: 2,
-            choice2: "Better ask him if he's a murderer first.", choice2Destination: 1
+        /*0*/  Story(
+            text: "There was once a very sick woman who was dying from a special disease. No one had the cure except a scientist who discovered it a few years ago. Her husband, Heinz, asked the scientist for the medicine, but it was too expensive. ",
+            question: "",
+            choice1: "Click to Continue",
+            choice1Destination: 1,
+            choice2: "",
+            choice2Destination: 1
         ),
-        Story(
-            title: "He nods slowly, unfazed by the question.",
-            choice1: "At least he's honest. I'll climb in.", choice1Destination: 2,
-            choice2: "Wait, I know how to change a tire.", choice2Destination: 3
+               /*1*/   Story(
+                text: "The scientist said, “I found it, I should make the money.” Although the ingredients were cheap, the greedy scientist charged a lot. Heinz tries every legal means to raise enough money but he couldn’t, so he considers stealing it.",
+                question: "Is it right for him to steal the drug?",
+                choice1: "Yes",
+                choice1Destination: 2,
+                choice2: "No",
+                choice2Destination: 3
         ),
-        Story(
-            title: "As you begin to drive, the stranger starts talking about his relationship with his mother. He gets angrier and angrier by the minute. He asks you to open the glovebox. Inside you find a bloody knife, two severed fingers, and a cassette tape of Elton John. He reaches for the glove box.",
-            choice1: "I love Elton John! Hand him the cassette tape.", choice1Destination: 5,
-            choice2: "It's him or me! You take the knife and stab him.", choice2Destination: 4
+   /*2*/        Story(
+                text: "Without doing one wrong thing, his wife could die. This is a consequentialist view on morality. Consequentialists say that you judge an action based on the consequences of it. For example, lying is generally considered to be wrong. But if lying could save someone in a specific instance, consequentialists would say lying is morally permissible. In this case, people say that human life is more important than the rights of the scientist.",
+                question: "",
+                choice1: "You chose Yes",
+                choice1Destination: 4,
+                choice2: "Click to Continue",
+                choice2Destination: 4
         ),
-        Story(
-            title: "What? Such a cop out! Did you know traffic accidents are the second leading cause of accidental death for most adult age groups?",
-            choice1: "The", choice1Destination: 0,
-            choice2: "End", choice2Destination: 0
+    /*3*/       Story(
+                text: "Some people believe in strict moral rules like “stealing is wrong no matter what the consequence is”. You might be worried about Heinz going to jail if he gets caught stealing. Is it a risk that Heinz should take? If you were the judge that had to give Heinz his sentence, would you be more understanding of his situation? What if other people also need this drug? It would be wrong for him to steal it for free when others are struggling to find a way to afford it as well.",
+                question: "",
+                choice1: "You chose No",
+                choice1Destination: 4,
+                choice2: "Click to Continue",
+                choice2Destination: 4
         ),
-        Story(
-            title: "As you smash through the guardrail and careen towards the jagged rocks below you reflect on the dubious wisdom of stabbing someone while they are driving a car you are in.",
-            choice1: "The", choice1Destination: 0,
-            choice2: "End", choice2Destination: 0
+    /*4*/        Story(
+                text: "Does Heinz have a duty/obligation to steal the drug if he doesn't love his wife?",
+                question: "",
+                choice1: "Yes",
+                choice1Destination: 5,
+                choice2: "No",
+                choice2Destination: 6
         ),
-        Story(
-            title: "You bond with the murderer while crooning verses of 'Can you feel the love tonight'. He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: 'Try the pier.'",
-            choice1: "The", choice1Destination: 0,
-            choice2: "End", choice2Destination: 0
-        )
-]
+    /*5*/       Story(
+                text: "In this case, it doesn’t matter whether or not you like the person or not. It’s about saving a human life. Every life is valuable and we don’t know whether or not the wife was a terrible person.",
+                question: "Would you answer differently if we knew that the wife was a terrible person to everyone around her before her sickness?",
+                choice1: "You chose Yes",
+                choice1Destination: 7,
+                choice2: "Return to Menu",
+                choice2Destination: 7
+        ),
+    /*6*/       Story(
+                text: "If Heinz doesn’t care whether or not his wife dies, the drugs could be used to save someone else. Heinz would probably not want to risk going to jail saving someone he doesn't love. But what if the wife expects Heinz to steal the drug for her and he doesn’t want to because he doesn’t love her.",
+                question: "What should Heinz do in that case?",
+                choice1: "You chose No",
+                choice1Destination: 8,
+                choice2: "Return to Menu",
+                choice2Destination: 8
+                ),
+    /*7*/       Story(
+                text: "In this case, it doesn’t matter whether or not you like the person or not. It’s about saving a human life. Every life is valuable and we don’t know whether or not the wife was a terrible person.",
+                question: "Would you answer differently if we knew that the wife was a terrible person to everyone around her before her sickness?",
+                choice1: "You chose Yes",
+                choice1Destination: 10,
+                choice2: "Return to Menu",
+                choice2Destination: 10
+                    ),
+    /*8*/       Story(
+                text: "If Heinz doesn’t care whether or not his wife dies, the drugs could be used to save someone else. Heinz would probably not want to risk going to jail saving someone he doesn't love. But what if the wife expects Heinz to steal the drug for her and he doesn’t want to because he doesn’t love her.",
+                question: "What should Heinz do in that case?",
+                choice1: "You chose No",
+                choice1Destination: 10,
+                choice2: "Return to Menu",
+                choice2Destination: 10
+                )
+    ]
     
     var choiceDestination = 0
     
-    func changeTitle() -> String {
-        return example[choiceDestination].title
+    func changeText() -> String {
+        return example[choiceDestination].text
+    }
+    
+    func changeQuestion() -> String {
+        return example[choiceDestination].question
     }
     
     func changeButton1() -> String {
@@ -54,6 +100,10 @@ struct StoryBrain4 {
     
     func changeButton2() -> String {
         return example[choiceDestination].choice2
+    }
+    
+    func destination() -> Int {
+        return example[choiceDestination].choice2Destination
     }
     
     mutating func nextStory(SelectedAnswer:String) {
@@ -65,4 +115,3 @@ struct StoryBrain4 {
         }
     }
 }
-
