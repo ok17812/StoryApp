@@ -10,7 +10,7 @@
         <!--Trolley vs Footbridge-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Trolley vs Footbridge" id="BYZ-38-t0r" customClass="TrolleyVsBridgeController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Trolley vs Footbridge" id="BYZ-38-t0r" customClass="TrolleyVsBridgeController" customModule="InteractiveEthics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
         <!--Title-->
         <scene sceneID="2YS-gC-qmk">
             <objects>
-                <viewController title="Title" id="UMb-KW-Uwj" customClass="TitleController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Title" id="UMb-KW-Uwj" customClass="TitleController" customModule="InteractiveEthics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="83f-8b-pt4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,12 +127,12 @@
                                 <rect key="frame" x="20" y="88" width="374" height="774"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="gP6-85-6K3">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="174"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="159"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Get started by clicking on one of the cases below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2W-dM-Rr9">
-                                        <rect key="frame" x="0.0" y="194" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="179" width="374" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="E9C-Zf-dVI"/>
+                                            <constraint firstAttribute="height" constant="65" id="9mg-xJ-dmW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -145,7 +145,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-kS-XRR">
-                                        <rect key="frame" x="0.0" y="314" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="264" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="z6J-D2-i6n"/>
                                         </constraints>
@@ -165,7 +165,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hxs-KZ-NYT">
-                                        <rect key="frame" x="0.0" y="434" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="384" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="q8B-Rn-Wth"/>
                                         </constraints>
@@ -185,7 +185,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Nrr-Y1-fek">
-                                        <rect key="frame" x="0.0" y="554" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="504" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="oHa-qN-YTl"/>
                                         </constraints>
@@ -206,7 +206,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Yqe-gv-10J">
-                                        <rect key="frame" x="0.0" y="674" width="374" height="100"/>
+                                        <rect key="frame" x="0.0" y="624" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="awe-tP-SDg"/>
                                         </constraints>
@@ -225,6 +225,21 @@
                                             <segue destination="zem-am-Wbn" kind="show" id="Ifh-vS-qc6"/>
                                         </connections>
                                     </button>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6D-pW-EMl">
+                                        <rect key="frame" x="0.0" y="744" width="374" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="YRY-Qf-CVf"/>
+                                        </constraints>
+                                        <items>
+                                            <barButtonItem systemItem="flexibleSpace" id="PRg-zw-7Cj"/>
+                                            <barButtonItem title="About" image="info.circle" catalog="system" style="done" id="ekE-nV-V2k">
+                                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <segue destination="Ivb-tz-efH" kind="show" id="LQ8-vp-be8"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -243,11 +258,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mx6-9q-lMg"/>
                     <connections>
+                        <outlet property="aboutButton" destination="ekE-nV-V2k" id="17c-2b-mee"/>
                         <outlet property="choice1Button" destination="w6p-kS-XRR" id="GDI-Tq-d9D"/>
                         <outlet property="choice2Button" destination="hxs-KZ-NYT" id="XPm-wi-yCa"/>
                         <outlet property="choice3Button" destination="Nrr-Y1-fek" id="P9R-OD-gN7"/>
                         <outlet property="choice4Button" destination="Yqe-gv-10J" id="lPq-ka-uPb"/>
                         <outlet property="storyLabel" destination="m2W-dM-Rr9" id="i8G-AI-cqw"/>
+                        <outlet property="toolBar" destination="T6D-pW-EMl" id="5aG-ha-hBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKF-oO-BKk" sceneMemberID="firstResponder"/>
@@ -275,7 +292,7 @@
         <!--Thomson's Violin-->
         <scene sceneID="ztJ-9m-zCL">
             <objects>
-                <viewController title="Thomson's Violin" id="O0g-mB-181" customClass="ThomsonViolinController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Thomson's Violin" id="O0g-mB-181" customClass="ThomsonViolinController" customModule="InteractiveEthics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nr6-lp-5es">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -380,7 +397,7 @@
         <!--Charlotte's Family-->
         <scene sceneID="A7U-9l-Ct2">
             <objects>
-                <viewController title="Charlotte's Family" id="tdc-1z-fSC" customClass="CharlotteFamilyController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Charlotte's Family" id="tdc-1z-fSC" customClass="CharlotteFamilyController" customModule="InteractiveEthics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W8T-Sj-QmS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,7 +502,7 @@
         <!--Heinz and the medicine-->
         <scene sceneID="xVP-e1-Fwn">
             <objects>
-                <viewController title="Heinz and the medicine" id="zem-am-Wbn" customClass="HeinzMedicineController" customModule="StoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Heinz and the medicine" id="zem-am-Wbn" customClass="HeinzMedicineController" customModule="InteractiveEthics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yu7-2G-Uum">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -587,6 +604,130 @@
             </objects>
             <point key="canvasLocation" x="386" y="819"/>
         </scene>
+        <!--About -->
+        <scene sceneID="yfA-Oj-maD">
+            <objects>
+                <viewController title="About " id="Ivb-tz-efH" customClass="aboutController" customModule="InteractiveEthics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HuS-gb-b1K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background 3" translatesAutoresizingMaskIntoConstraints="NO" id="ZXo-EF-Ud7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hXT-Sk-OCJ">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="About" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="W6C-HK-KOK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Qh7-aF-aIA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Acknowledgments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xro-BS-grp">
+                                        <rect key="frame" x="0.0" y="55" width="374" height="23.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="2jW-Iw-1CW">
+                                        <rect key="frame" x="0.0" y="98.5" width="374" height="152.5"/>
+                                        <string key="text">"Charlotte’s Family​- National High School Ethics BowlCase Authors- Dustyn Addington, Ariella Buckley, Dominique Déry, Sarah Green, Grayson Holmes, Clare LaFrance, Chris Ng, Tate Overbey, Katie Petrik, Samuel Reis-Dennis, Jeff Sebo, Keshav Singh, Robert Smithson, John Torrey, Brian Wong Check them out at ​https://nhseb.unc.edu/"</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="kYg-b0-sWV">
+                                        <rect key="frame" x="0.0" y="271" width="374" height="130"/>
+                                        <string key="text"> Thomson’s Violin
+“Unconscious violinists and the use of analogies in moral argument” by Eric Wiland University of Missouri-St Louis, Missouri, USA
+Read the full paper here at ​https://jme.bmj.com/ content/medethics/26/6/466.full.pdf</string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="yLW-2a-iIy" userLabel="Programer Evan Chang For inquiries, email ​evanchang17812@hotmail.com">
+                                        <rect key="frame" x="0.0" y="421" width="374" height="65.5"/>
+                                        <string key="text">Programer
+Evan Chang
+For inquiries, email ​evanchang17812@hotmail.com</string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="tAh-P8-xFH">
+                                        <rect key="frame" x="0.0" y="506.5" width="374" height="267.5"/>
+                                        <string key="text">About Victoria
+Victoria is a highly motivated student who is pursuing the field of moral philosophy. Through her experience in teaching philosophy and ethics to middle schoolers at the Long Island School for the Gifted, she has realized the importance of explaining ethics in a palatable and fun way. She created this app in order to make philosophy and ethics accessible to everyone as it is lacking in many school curriculums. She hopes you enjoy learning about ethics as much as she does!
+You can reach her at ​victoria.f.tong@gmail.com</string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <string key="userLabel">About Victoria Victoria is a highly motivated student who is pursuing the field of moral philosophy. Through her experience in teaching philosophy and ethics to middle schoolers at the Long Island School for the Gifted, she has realized the importance of explaining ethics in a palatable and fun way. She created this app in order to make philosophy and ethics accessible to everyone as it is lacking in many school curriculums. She hopes you enjoy learning about ethics as much as she does! You can reach her at ​victoria.f.tong@gmail.com</string>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZXo-EF-Ud7" secondAttribute="bottom" id="JKO-Mf-WPP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hXT-Sk-OCJ" secondAttribute="trailing" id="XAE-ye-ReX"/>
+                            <constraint firstItem="ZXo-EF-Ud7" firstAttribute="top" secondItem="HuS-gb-b1K" secondAttribute="top" id="cOY-n4-C5x"/>
+                            <constraint firstItem="2Zx-Y9-gU7" firstAttribute="bottom" secondItem="hXT-Sk-OCJ" secondAttribute="bottom" id="dbD-2s-IOI"/>
+                            <constraint firstItem="ZXo-EF-Ud7" firstAttribute="trailing" secondItem="2Zx-Y9-gU7" secondAttribute="trailing" id="f8c-rq-6wy"/>
+                            <constraint firstItem="ZXo-EF-Ud7" firstAttribute="leading" secondItem="2Zx-Y9-gU7" secondAttribute="leading" id="haE-12-ohp"/>
+                            <constraint firstItem="hXT-Sk-OCJ" firstAttribute="top" secondItem="2Zx-Y9-gU7" secondAttribute="top" id="oZu-wr-E3W"/>
+                            <constraint firstItem="hXT-Sk-OCJ" firstAttribute="leading" secondItem="HuS-gb-b1K" secondAttribute="leadingMargin" id="q0a-kv-lZd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Zx-Y9-gU7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mcf-jH-J9C"/>
+                    <connections>
+                        <outlet property="CLabel" destination="2jW-Iw-1CW" id="we2-S7-LoH"/>
+                        <outlet property="PLabel" destination="yLW-2a-iIy" id="1G1-h1-QuF"/>
+                        <outlet property="TLabel" destination="kYg-b0-sWV" id="Lwu-aM-uEa"/>
+                        <outlet property="VLabel" destination="tAh-P8-xFH" id="gv8-ak-XHT"/>
+                        <outlet property="aboutLabel" destination="W6C-HK-KOK" id="eIo-ab-acC"/>
+                        <outlet property="acknowledgmentLabel" destination="Xro-BS-grp" id="q27-GN-wgA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qV3-Sv-H5Z" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1317" y="1041"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Charlotte's family" width="1259" height="1125"/>
@@ -599,5 +740,6 @@
         <image name="choice2Background" width="1370.5" height="363"/>
         <image name="choice3Background" width="1354" height="353"/>
         <image name="choice4Background" width="1354" height="353"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

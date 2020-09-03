@@ -16,11 +16,22 @@ class TitleController: UIViewController {
     @IBOutlet weak var choice2Button: UIButton!
     @IBOutlet weak var choice3Button: UIButton!
     @IBOutlet weak var choice4Button: UIButton!
+    @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet weak var aboutButton: UIBarButtonItem!
+
+    
+
+    
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+
+
+        
+       
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -28,14 +39,16 @@ class TitleController: UIViewController {
         navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    //    storyLabel.text = storyBrain.changeTitle()
-    //   choice1Button.setTitle(storyBrain.changeButton1(), for: UIControl.State.normal)
-    //    choice2Button.setTitle(storyBrain.changeButton2(), for: UIControl.State.normal)
+        self.toolBar.setBackgroundImage(UIImage(), forToolbarPosition: .any, barMetrics: .default)
+        self.toolBar.setShadowImage(UIImage(), forToolbarPosition: .any)
+
+       
+        
 
     }
     

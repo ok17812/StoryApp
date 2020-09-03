@@ -22,10 +22,11 @@
 		74B9F18D24E38B4700AFDA12 /* ThomsonViolinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18C24E38B4700AFDA12 /* ThomsonViolinController.swift */; };
 		74B9F18F24E38B6100AFDA12 /* CharlotteFamilyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F18E24E38B6100AFDA12 /* CharlotteFamilyController.swift */; };
 		74B9F19124E38B7800AFDA12 /* HeinzMedicineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F19024E38B7800AFDA12 /* HeinzMedicineController.swift */; };
+		74B9F3B52500645B00AFDA12 /* aboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F3B42500645B00AFDA12 /* aboutController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7455CDF724DBBA5600C19A4F /* StoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7455CDF724DBBA5600C19A4F /* InteractiveEthics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveEthics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7455CDFA24DBBA5600C19A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7455CDFC24DBBA5600C19A4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7455CDFE24DBBA5600C19A4F /* TitleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleController.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		74B9F18C24E38B4700AFDA12 /* ThomsonViolinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThomsonViolinController.swift; sourceTree = "<group>"; };
 		74B9F18E24E38B6100AFDA12 /* CharlotteFamilyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharlotteFamilyController.swift; sourceTree = "<group>"; };
 		74B9F19024E38B7800AFDA12 /* HeinzMedicineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeinzMedicineController.swift; sourceTree = "<group>"; };
+		74B9F3B42500645B00AFDA12 /* aboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 		7455CDF824DBBA5600C19A4F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7455CDF724DBBA5600C19A4F /* StoryApp.app */,
+				7455CDF724DBBA5600C19A4F /* InteractiveEthics.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +108,7 @@
 				74B9F18C24E38B4700AFDA12 /* ThomsonViolinController.swift */,
 				74B9F18E24E38B6100AFDA12 /* CharlotteFamilyController.swift */,
 				74B9F19024E38B7800AFDA12 /* HeinzMedicineController.swift */,
+				74B9F3B42500645B00AFDA12 /* aboutController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,7 +138,7 @@
 			);
 			name = StoryApp;
 			productName = StoryApp;
-			productReference = 7455CDF724DBBA5600C19A4F /* StoryApp.app */;
+			productReference = 7455CDF724DBBA5600C19A4F /* InteractiveEthics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,6 +197,7 @@
 				7455CDFF24DBBA5600C19A4F /* TitleController.swift in Sources */,
 				74B9F18D24E38B4700AFDA12 /* ThomsonViolinController.swift in Sources */,
 				7455CDFB24DBBA5600C19A4F /* AppDelegate.swift in Sources */,
+				74B9F3B52500645B00AFDA12 /* aboutController.swift in Sources */,
 				74B9F18F24E38B6100AFDA12 /* CharlotteFamilyController.swift in Sources */,
 				74B9F18724E37F0B00AFDA12 /* StoryBrain3.swift in Sources */,
 				7455CDFD24DBBA5600C19A4F /* SceneDelegate.swift in Sources */,
@@ -345,14 +349,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FGS79CPDB4;
+				DEVELOPMENT_TEAM = 4Q7Y895RPW;
 				INFOPLIST_FILE = StoryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.evanchang17812.StoryApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victoriatong.InteractiveEthics;
+				PRODUCT_NAME = InteractiveEthics;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,14 +367,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FGS79CPDB4;
+				DEVELOPMENT_TEAM = 4Q7Y895RPW;
 				INFOPLIST_FILE = StoryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.evanchang17812.StoryApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.victoriatong.InteractiveEthics;
+				PRODUCT_NAME = InteractiveEthics;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
